@@ -9,6 +9,7 @@ load_dotenv()
 # set permissions for local chromedriver to test locally
 start_url = "https://myfit4less.gymmanager.com/portal/login.asp"
 booking_date = str(datetime.now().date() + timedelta(days=int(os.getenv("DAYS")) or 2))
+print("TODAYS DATE:",datetime.now().date())
 chrome_options = Options()
 
 # first condition just for debugging locally
